@@ -1,3 +1,4 @@
+import time
 import telepot
 from telepot.loop import MessageLoop
 
@@ -18,4 +19,4 @@ MessageLoop(bot, handle).run_as_thread()
 print 'I am listening ...'
 
 while 1:
-time.sleep(10)
+    time.sleep(10)

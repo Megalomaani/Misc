@@ -8,9 +8,9 @@ def handle(msg):
     print 'Got command: %s' % command
 
     if command == '/moro':
-        bot.sendMessage(chat_id, "No haista sinä huora vittu!")
+        bot.sendMessage(chat_id, "No haista sina huora vittu!")
     else:
-        bot.sendMessage(chat_id, "Haista sinä huora kyrpä!")
+        bot.sendMessage(chat_id, "Haista sina huora kyrpa!")
 
 bot = telepot.Bot('668854429:AAEsAcxQWL7ej0bSIjQl8bnKeMzG4WfIURM')
 

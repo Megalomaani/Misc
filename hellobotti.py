@@ -10,6 +10,8 @@ def handle(msg):
 
     if command == '/moro':
         bot.sendMessage(chat_id, "No haista sina huora vittu!")
+    elif command == '/dickpick':
+            bot.send_photo(chat_id=chat_id, photo=open('dp.png', 'rb'))  
     else:
         bot.sendMessage(chat_id, "Haista sina huora kyrpa!")
 

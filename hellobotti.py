@@ -1,6 +1,7 @@
 import time
 import telepot
 from telepot.loop import MessageLoop
+import subprocess
 
 def handle(msg):
     chat_id = msg['chat']['id']
@@ -11,7 +12,10 @@ def handle(msg):
     if command == '/moro':
         bot.sendMessage(chat_id, "No haista sina huora vittu!")
     elif command == '/dickpick':
-            bot.sendPhoto(chat_id=chat_id, photo=open('dp.png', 'rb'))  
+            bot.sendPhoto(chat_id=chat_id, photo=open('dp.png', 'rb'))
+    elif command == '/webkuva':
+            subprocess.call(['./takepic.sh'])
+            bot.sendPhoto(chat_id=chat_id, photo=open('shpic.jpg', 'rb'))
     else:
         bot.sendMessage(chat_id, "Haista sina huora kyrpa!")
 

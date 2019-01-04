@@ -15,7 +15,7 @@ def handle(msg):
             bot.sendPhoto(chat_id=chat_id, photo=open('dp.png', 'rb'))
     elif command == '/webkuva':
             subprocess.call(['./takepic.sh'])
-            bot.sendPhoto(chat_id=chat_id, photo=open('shpic.jpg', 'rb'))
+            bot.sendPhoto(chat_id=chat_id, photo=open('pics/shpic.jpg', 'rb'))
     else:
         bot.sendMessage(chat_id, "Haista sina huora kyrpa!")
 

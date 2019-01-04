@@ -1,5 +1,5 @@
 #!/bin/bash
 
-fswebcam shpic.jpg
+fswebcam pics/shpic.jpg
 
-sudo fbi shpic.jpg -T 1
+sudo fbi pics/shpic.jpg -T 1
